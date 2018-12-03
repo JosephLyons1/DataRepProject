@@ -1,0 +1,11 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+mat-form-field,
+textarea {
+  width: 100%;
+}
+.mat-toolbar.mat-primary[_ngcontent-c0] {
+  background: #ff4040;
+  color: #fff;
+}

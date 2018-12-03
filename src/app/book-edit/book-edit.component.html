@@ -1,0 +1,29 @@
+<mat-card>
+  <form (submit)="onEditbook(bookForm)" #bookForm="ngForm">
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="title"
+        ngModel={{book.title}}
+        required
+        #title="ngModel"
+        >
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        rows="4"
+        name="content"
+        ngModel={{book.content}}
+        required
+        #content="ngModel">
+      </textarea>
+      <mat-error *ngIf="content.invalid">Please enter book title.</mat-error>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="accent"
+      type="submit">Update book review</button>
+  </form>
+</mat-card>

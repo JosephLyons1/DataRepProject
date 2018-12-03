@@ -1,0 +1,31 @@
+<!-- <mat-toolbar color='primary'>book</mat-toolbar> -->
+<!-- <app-book-create></app-book-create>
+<app-book-details></app-book-details> -->
+<!-- <div class="button-row">
+  <a mat-raised-button color="primary" [routerLink]="['/']"><mat-icon>add</mat-icon></a>
+</div> -->
+<mat-toolbar color="primary"> 
+    <mat-toolbar-row>
+            <span class="title-center">
+        My Book Review application
+    </span>
+      </mat-toolbar-row>
+    
+      <mat-toolbar-row>
+        <button mat-button [routerLink]="['/home']" color="Home">Home</button>
+  <button mat-button [routerLink]="['/create']" color="Warn">Create book review</button>
+  <button mat-button [routerLink]="['/list']">book List</button>
+</mat-toolbar-row>
+ </mat-toolbar>
+ <img mat-card-image src="https://elgarblog.files.wordpress.com/2014/01/education-books.jpg " alt="Photo of a Shiba Inu">
+
+
+<!--<button mat-button color="primary" [matMenuTriggerFor]="menu">book Menu</button>
+<mat-menu color="primary" #menu="matMenu">
+  <button color="primary" mat-menu-item [routerLink]="['/create']">Create</button>
+  <button color="primary"mat-menu-item [routerLink]="['/']">List</button>
+</mat-menu> -->
+  
+ 
+
+<router-outlet></router-outlet>
